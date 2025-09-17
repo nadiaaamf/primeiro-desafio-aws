@@ -2,11 +2,11 @@
 
 Projeto: Gerenciando Instâncias EC2 na AWS.
 
-Curso: Code Girls 2025. 
+Curso: Code Girls 2025.
 
 Autor: Nádia Marcelino
 
-📝 Sobre Este Projeto: Documenta minha jornada de aprendizado sobre o gerenciamento de instâncias EC2 (Elastic Compute Cloud) na AWS . Aqui você encontrará minhas anotações e insights adquiridos durante as aulas.  
+📝 Sobre Este Projeto: Documenta minha jornada de aprendizado sobre o gerenciamento de instâncias EC2 (Elastic Compute Cloud) na AWS . Aqui você encontrará minhas anotações e insights adquiridos durante as aulas.
 
 Por que estou documentando?
 
@@ -16,28 +16,28 @@ Por que estou documentando?
 
 🔄 Ter material de consulta futura;
 
-🤝 Compartilhar conhecimento através do GitHub. 
+🤝 Compartilhar conhecimento através do GitHub.
 
 📁 Organização do Repositório
 
 📦 aws-ec2-lab/
 
-├── 📄 README.md 
+├── 📄 README.md
 
 ├── 📄 anotacoes
 
- ├── 📁 images/ 
- 
+├── 📁 images/
+
     ├── images_aws
-    
+
     ├── images_caderno
-    
-  ├── 📄 anotacoes_caderno
-  
-  └── 📄 anotacoes_complementares
- 
+
+├── 📄 anotacoes_caderno
+
+└── 📄 anotacoes_complementares
+
 Principais conquistas até agora:
- 
+
 ✅ Conseguios modelos SaaS, Paas e IaaS;
 
 ✅ Entender a história da AWS;
@@ -50,9 +50,8 @@ Principais conquistas até agora:
 
 Maiores desafios:
 
-* Lembrar de parar instâncias para não gastar créditos;
-  
-* Melhores práticas de segurança.
+- Lembrar de parar instâncias para não gastar créditos;
+- Melhores práticas de segurança.
 
 🤝 Contato e Feedback
 
@@ -60,6 +59,6 @@ GitHub: https://github.com/nadiaaamf
 
 Email: nadia.mfaria@hotmail.com
 
-LinkedIn: www.linkedin.com/in/nadia-marcelino-faria 
+LinkedIn: www.linkedin.com/in/nadia-marcelino-faria
 
 Feedback é sempre bem-vindo! Vamos trocar experiências! 🚀
