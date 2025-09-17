@@ -1,0 +1,208 @@
+AWS (Amazon Web Services)
+
+Definição: Plataforma de nuvem da Amazon
+Início: 2006
+Característica: Alta escalabilidade e infraestrutura robusta
+Exemplos de uso: Amazon.com, Netflix, sistemas bancários
+
+Cloud Computing (Computação em Nuvem)
+
+O que é: Entrega de recursos de TI via internet
+Vantagem: Democratizou acesso à tecnologia avançada
+Modelo: Pay-as-you-go (pague conforme usa)
+
+INFRAESTRUTURA GLOBAL
+Region (Região)
+
+Definição: Área geográfica com múltiplas Availability Zones
+Critérios de escolha:
+
+Compliance (regulamentações)
+Disponibilidade de serviços
+Custo
+Latência
+
+
+
+Availability Zone (Zona de Disponibilidade)
+
+O que é: Data centers fisicamente independentes
+Característica: Conectados logicamente para alta disponibilidade
+Total atual: 105 zonas globalmente
+
+MODELOS DE NUVEM
+Nuvem Pública
+
+Característica: Recursos compartilhados
+Desvantagem: Maior risco com privacidade
+
+Nuvem Privada
+
+Características: Recursos dedicados
+Desvantagens: Alto custo de investimento e operação contínua
+
+Nuvem Híbrida
+
+Vantagens: Escalabilidade, segurança, controle total
+Investimento: Alto inicial, mas com benefícios a longo prazo
+
+MODELOS DE SERVIÇO
+SaaS - Software as a Service
+
+Conceito: USE (software pronto)
+Exemplos: Gmail, CRM, ERP, Netflix, Spotify
+Responsabilidade do usuário: Apenas usar a aplicação
+
+PaaS - Platform as a Service
+
+Conceito: CONSTRUA (plataforma para desenvolver)
+Usos: Desenvolvimento de aplicações, streaming, web
+Responsabilidade: Desenvolvimento e dados
+
+IaaS - Infrastructure as a Service
+
+Conceito: MIGRE (infraestrutura como base)
+Componentes: Sistema operacional, servidor de arquivos, segurança
+Responsabilidade: Aplicações, dados, conexões
+
+EC2 - ELASTIC COMPUTE CLOUD
+EC2 (Elastic Compute Cloud)
+
+Definição: Máquinas virtuais na AWS
+Sistemas: Windows ou Linux
+Tipo: IaaS (Infrastructure as a Service)
+Componentes: CPU + Memória + Disco + Rede + SO
+
+Instância EC2
+
+O que é: Uma máquina virtual individual
+Escalabilidade: Horizontal (mais instâncias) ou Vertical (mais poder)
+
+Nomenclatura de Instâncias
+Exemplo: C7gn.xlarge
+
+C: Instance Family (família da instância)
+7: Instance Generation (geração)
+g: Processor Family (família do processador)
+n: Additional Capability (capacidade adicional)
+xlarge: Instance Size (tamanho da instância)
+
+MODELOS DE PRECIFICAÇÃO
+On-Demand (Sob Demanda)
+
+Pagamento: Taxa fixa por hora
+Ideal para: Cargas irregulares de curto prazo
+Característica: Não pode ser interrompida
+
+Reserved Instances (Instâncias Reservadas)
+
+Vantagem: Mais baratas que On-Demand
+Compromisso: Pagamento anual
+Economia: Até 75% comparado a On-Demand
+
+Spot Instances (Instâncias Spot)
+
+Desconto: Até 90% do preço On-Demand
+Risco: AWS pode terminar a qualquer momento
+Ideal para: Workloads tolerantes a interrupções
+
+ARMAZENAMENTO
+EBS (Elastic Block Store)
+
+Definição: Armazenamento em bloco para EC2
+Característica: Altamente confiável
+Analogia: "Como um HD externo"
+Vantagem: Expansão rápida com poucos cliques
+
+S3 (Simple Storage Service)
+
+Uso: Armazenamento de grandes volumes de dados
+Característica: Seguro e escalável
+Classes: Diferentes níveis de custo e acesso
+Exemplo real: Usado pelo Sem Parar
+
+EFS (Elastic File System)
+
+Definição: Sistema de arquivos compartilhado
+Vantagem: Acesso simultâneo por múltiplas instâncias
+
+IMAGENS E BACKUPS
+AMI (Amazon Machine Image)
+
+Definição: Imagem pré-configurada de máquina virtual
+Inclui: SO + servidor de aplicações + aplicações
+Função: Template para criar instâncias EC2
+
+Snapshot
+
+O que é: Cópia pontual de um volume EBS específico
+Armazenamento: Salvo no Amazon S3
+Diferença da Imagem: Snapshot = um volume; Imagem = instância completa
+
+ SEGURANÇA E ACESSO
+Security Group
+
+Função: Firewall virtual da instância
+Controla: Protocolos, portas e IPs de origem
+Ação: Permite ou nega acesso às instâncias
+Comportamento padrão: Nega tudo que entra
+
+Root Account
+
+Definição: Conta principal da AWS
+Privilégios: Superprivileges (acesso total)
+Cuidado: Usar com responsabilidade
+
+CONCEITOS DE PERFORMANCE
+Escalabilidade Horizontal
+
+Método: Adicionar mais recursos/instâncias
+Exemplo: +1 disco rígido, +1 instância EC2
+
+Escalabilidade Vertical
+
+Método: Aumentar poder dos recursos existentes
+Exemplo: Mais CPU/RAM na mesma instância
+
+High Availability (Alta Disponibilidade)
+
+Como: Distribuição entre múltiplas AZs
+Objetivo: Minimizar downtime
+
+OTIMIZAÇÃO E CUSTOS
+OPEX (Operational Expenditure)
+
+Conceito: Gastos operacionais (não investimento inicial)
+Vantagem: Sem necessidade de infraestrutura própria
+
+Otimização de Recursos
+
+Significado: Economizar custos
+Métodos:
+
+Desligar instâncias não utilizadas
+Remover recursos ociosos
+Criar automação de gerenciamento
+
+
+
+Lifecycle (Ciclo de Vida)
+
+Função: Gerenciar objetos S3 durante tempo de vida
+Ação: Transição automática para classes mais baratas (ex: Glacier)
+
+ FORMAS DE ACESSO
+AWS Console
+
+O que é: Interface web para gerenciar AWS
+Vantagem: Visual e intuitivo
+
+AWS CLI (Command Line Interface)
+
+O que é: Interface de linha de comando
+Vantagem: Automação e scripts
+
+AWS Cloud Shell
+
+O que é: Terminal baseado em navegador
+Vantagem: Pré-configurado com ferramentas AWS

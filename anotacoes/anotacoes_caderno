@@ -1,0 +1,116 @@
+Formação AWS Cloud Foundations
+
+Cloud Provider
+
+Módulo 1 
+
+História da AWS
+Amazon - 1994
+
+Data centers: 
+* Regions: São regiões geográficas contendo várias Availability Zones;
+* Availability Zones: São data centers independentes fisicamente, mas conectados logicamente para garantir alta disponilibidade.
+
+105 zonas de disponilibidade.
+
+Modelo de negócio da AWS: pagamento por uso (pricing flex).
+Modelo OPEX: não necessita de uma infraestrutura para iniciar o projeto. 
+
+Grande variedade de serviços: computação/ armazenamento/ banco de dados/ serviços especializados com machine learning, IOT, análise de dados. 
+
+Pública: maior risco com a privacidade.
+Híbrido: alto investimento, acesso imediato, menor custo, escalabilidade, segurança, controle total
+Privada: alto custo de investimento, custo contínuo da operação. 
+
+SaaS -> Software como serviço (USE):
+* E-mail
+* CRM
+* ERP (ex: netflix, spotify)
+
+PaaS -> Plataforma como serviço (CONSTRUA):
+* Desenvolvimento de aplicação
+* Streaming
+* Web
+* Decisões de suporte
+
+IaaS -> Software como serviço (MIGRE): 
+* Sistema ligado
+* Servidor de arquivos
+* Segurança
+* Sistema de gerenciamento
+* Sistema de cache
+
+Cada modelo oferece um nível diferente de controle e responsabilidade para o usuário.
+
+Eles descrevem a "camada" de recursos que um provedor de nuvem oferece a você. A principal diferença entre eles é a quantidade de controle que o cliente tem e a quantidade de responsabilidade que o provedor de nuvem assume. 
+
+Foundations
+
+Regiões: composta por duas ou mais zonas de disponibilidades.
+   data centers (availability zones)
+
+Como escolher a região:
+* Compliance
+* Disponibilidade de serviço
+* Custo
+* Latência
+
+AWS -> plataforma de nuvem muito conhecida pela sua alta escalabilidade e robusta infraestrutura, capaz de suportar sistemas de grande porte e alta demanda, como Amazon.com, Netflix e sistemas bancários. 
+Conta -> toda conta Cloud terá uma conta principal (root) com privilégios e superprivilégios.
+
+As formas estão corretas para acessar uma plataforma AWS: cloud shell, console e CLI.
+
+Computação na nuvem com EC2
+
+O que são instâncias EC2: máquinas virtuais na AWS, podendo ser com sistemas operacional Windows ou Linux.
+
+Uma EC2 é composta por: CPU, memória, disco, rede, sistema operacional.
+
+No modelo Cloud, ele é tipo IAAS (MIGRE).
+Responsabilidade: App, dados e conexões que fazemos. 
+
+POde definir a segurança básica utilizando firewall incorporada do AWS, utilizar grupo de segurança, protocolo, porta, IPS de origem que permite ou nega o acesso às suas instâncias EC2. 
+
+
+C7gn.xlarge: 
+
+C -> instance family
+7 -> instance generation
+g -> processor family
+n -> additional capability
+xlarge -> instance size
+
+Otimização de recursos: "custos", ou seja, otimizar recurso é poupar custos na AWS. Desligando as instâncias não utilizadas. Pode criar uma automação para fazer isso. Causa economia de custos.
+
+Remover recursos ociosos ou não utilizados. Estará pagando por recursos não utilizados. Precisa fazer stop e realocage.
+
+Escalar recursos: executamos o scale de recursos para processar os workloads em determinados momentos. Temos a opção de aumentar ou diminuir de forma manual ou automática. 
+-Escalar horizontalmente (1)
+-Escalar verticalmente (2)
+
+1) quando aumenta o número e recursos, ou seja, adicionando mais um disco rígido, adicionando mais uma instância para suportar a aplicação.
+
+Sob demanda: instância comprada sob taxa fixa por hora e são recomendados para aplicativo com cargas de trabalho irregulares de curto prazo e que não podem ser interrompidos.
+
+Instâncias Reservadas: mais baratas, mas precisa pagar o ano inteiro.
+
+Instância SPOT: 90% de desconto, mas a amazon pode acabar com ela em qualquer momento.
+
+Armazenamento na nuvem
+
+Amazon EBS - storage altamente confiável que pode ser anexado em qualquer instância EC2. Todo instância possui um volume de armazenamento. Agora com o EBS, conseguimos ter a capacidade de expansão de forma rápida, com apenas alguns clicks. Seria como um HD externo. 
+Amazon S3 - outro recurso de armazenamento (ex: Sem Parar usa). Posso chamar uma lambda. É ideal para armazenar, organizar e recuperar grandes volumes de dados de forma segura e escalável. Possui algumas classes de storages onde conseguimos economizar nos custos.
+
+Podemos utilizar regra de ciclo de vida para definir a forma como o Amazon S3 gere objetos durante o seu tempo de vida. O Lifecycle permite fazer a transição de objetose migrar automaticamente para a classe Glacier.
+
+Gerenciamento de instância EC2.
+
+AMI (Amazon Machine Image) -> criação e uso de imagens. No Amazon EC2, uma AMI é uma imagem de máquina virtual pré-configurada, que inclui informações necessárias para iniciar uma instância, como o sistema operativo, o servidor de aplicações e as aplicações.
+
+EC2 -> capacidade escalável na nuvem do AWS através de máquinas virtuais, conhecidas como instâncias
+EBS -> armazenamento em bloco fiável (também conhecido como volumes ou discos rígidos). Foi concebido para ser utilizado com instâncias do EC2.
+Estamos falando de IaaS
+
+Snapshots
+
+Imagem: faz backup de um serviço inteiro, incluindo todos os volumes de EBS anexador. Um snapshot é uma cópia pontual de um determinado volume. Pode salvar no armazenamento S3.
