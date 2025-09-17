@@ -21,14 +21,21 @@ Por que estou documentando?
 📁 Organização do Repositório
 
 📦 aws-ec2-lab/
-├── 📄 README.md              
-├── 📄 anotacoes
- ├── 📁 images/ 
-    ├── images_aws
-    ├── images_caderno
-  ├── 📄 anotacoes_caderno
-  └── 📄 anotacoes_complementares
 
+├── 📄 README.md 
+
+├── 📄 anotacoes
+
+ ├── 📁 images/ 
+ 
+    ├── images_aws
+    
+    ├── images_caderno
+    
+  ├── 📄 anotacoes_caderno
+  
+  └── 📄 anotacoes_complementares
+ 
 Principais conquistas até agora:
  
 ✅ Conseguios modelos SaaS, Paas e IaaS;
